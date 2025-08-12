@@ -21,6 +21,11 @@
 - [Engineering Notes — Main Topics](#engineering-notes--main-topics)
   - [Table of Contents](#table-of-contents)
     - [OOP](#oop)
+      - [Encapsulation](#encapsulation)
+      - [Inheritance](#inheritance)
+      - [Polymorphism](#polymorphism)
+      - [Abstraction](#abstraction)
+      - [SOLID Principles](#solid-principles)
     - [Design Patterns](#design-patterns)
       - [Creational](#creational)
       - [Structural](#structural)
@@ -43,13 +48,23 @@ La Programación Orientada a Objetos (OOP) es un paradigma fundamental que permi
 
 Estos son conceptos clave de OOP:
 
+#### Encapsulation
+
 **Encapsulation** — Consiste en ocultar detalles internos de implementación y exponer solo lo necesario a través de interfaces.
+
+#### Inheritance
 
 **Inheritance** — Permite reutilizar y extender características de una clase base en clases derivadas.
 
+#### Polymorphism
+
 **Polymorphism** — Capacidad de diferentes objetos para responder de manera distinta al mismo mensaje o método.
 
+#### Abstraction
+
 **Abstraction** — Enfocarse en los aspectos esenciales de una entidad, ignorando detalles irrelevantes.
+
+#### SOLID Principles
 
 **SOLID Principles** — Conjunto de buenas prácticas para lograr un diseño de software limpio, mantenible y extensible.
 
