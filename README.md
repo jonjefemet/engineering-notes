@@ -1,7 +1,9 @@
 # Engineering Notes — Main Topics
 
 <!-- Badges -->
-[![Topic: OOP](https://img.shields.io/badge/Topic-OOP-blue?style=flat-square)](#oop) [![Topic: Software Architecture](https://img.shields.io/badge/Topic-Software%20Architecture-green?style=flat-square)](#software-architecture) [![Topic: Database Architecture](https://img.shields.io/badge/Topic-Database%20Architecture-orange?style=flat-square)](#database-architecture)
+[![Topic: OOP](https://img.shields.io/badge/Topic-OOP-blue?style=flat-square)](#oop)
+[![Topic: Software Architecture](https://img.shields.io/badge/Topic-Software%20Architecture-green?style=flat-square)](#software-architecture)
+[![Topic: Database Architecture](https://img.shields.io/badge/Topic-Database%20Architecture-orange?style=flat-square)](#database-architecture)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 <p align="center">
   <img src="./assets/home.png" alt="Doble página del glosario con personaje estilo anime en el centro" width="720" />
