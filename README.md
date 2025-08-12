@@ -16,16 +16,19 @@
 
 ---
 
-## Index
+## Table of Contents
 
 - [Engineering Notes — Main Topics](#engineering-notes--main-topics)
-  - [Index](#index)
+  - [Table of Contents](#table-of-contents)
     - [OOP](#oop)
     - [Design Patterns](#design-patterns)
-      - [Creacionales](#creacionales)
-      - [Estructurales](#estructurales)
-      - [De Comportamiento](#de-comportamiento)
+      - [Creational](#creational)
+      - [Structural](#structural)
+      - [Behavioral](#behavioral)
     - [Software Architecture](#software-architecture)
+      - [Event-Driven Architecture](#event-driven-architecture)
+      - [Microservices](#microservices)
+      - [Monolithic Architecture](#monolithic-architecture)
       - [RAG Architecture](#rag-architecture)
       - [Domain Driven Design (DDD)](#domain-driven-design-ddd)
     - [Database Architecture](#database-architecture)
@@ -36,72 +39,67 @@
 
 ### OOP
 
-Aquí puedes incluir tus apuntes sobre classes, objects, encapsulation, inheritance, composition, y principios clave como SOLID.
+La Programación Orientada a Objetos (OOP) es un paradigma fundamental que permite modelar sistemas complejos mediante la organización de código en objetos que representan entidades del mundo real, facilitando la reutilización y mantenimiento.
+
+Estos son conceptos clave de OOP:
+
+**Encapsulation** — Consiste en ocultar detalles internos de implementación y exponer solo lo necesario a través de interfaces.
+
+**Inheritance** — Permite reutilizar y extender características de una clase base en clases derivadas.
+
+**Polymorphism** — Capacidad de diferentes objetos para responder de manera distinta al mismo mensaje o método.
+
+**Abstraction** — Enfocarse en los aspectos esenciales de una entidad, ignorando detalles irrelevantes.
+
+**SOLID Principles** — Conjunto de buenas prácticas para lograr un diseño de software limpio, mantenible y extensible.
 
 ---
 
 ### Design Patterns
 
+Los patrones de diseño son soluciones probadas y reutilizables a problemas comunes en el diseño de software. Ayudan a crear sistemas flexibles, escalables y mantenibles mediante estructuras y comportamientos bien definidos.
+
 Breve guía de patrones de diseño clásicos (GoF), organizada por propósito. Úsalos como lenguaje común y como catálogo de soluciones probadas.
 
-#### Creacionales
+#### Creational
 
-- **Factory Method**: delega la creación a subclases para evitar `new` explícitos.
-- **Abstract Factory**: crea familias de objetos relacionados sin acoplarte a concreciones.
-- **Builder**: separa construcción de representación; útil para objetos con muchos parámetros opcionales.
-- **Prototype**: clona instancias existentes cuando crear desde cero es costoso.
-- **Singleton**: instancia única global; úsalo con moderación (puede acoplar y dificultar tests).
+Patrones que se enfocan en la creación flexible y controlada de objetos.
 
-**Ejemplo (Factory Method en Java):**
+#### Structural
 
-```java
-interface Button { void render(); }
-class WindowsButton implements Button { public void render(){ System.out.println("WinBtn"); } }
-class MacButton implements Button { public void render(){ System.out.println("MacBtn"); } }
-abstract class Dialog { // Creator
-  public void open(){ Button b = createButton(); b.render(); }
-  protected abstract Button createButton();
-}
-class WindowsDialog extends Dialog {
-  protected Button createButton(){ return new WindowsButton(); }
-}
-class MacDialog extends Dialog {
-  protected Button createButton(){ return new MacButton(); }
-}
-// Uso: new WindowsDialog().open(); o new MacDialog().open();
-```
+Patrones que organizan la composición de clases y objetos para formar estructuras más complejas.
 
-#### Estructurales
+#### Behavioral
 
-- **Adapter**: traduce interfaces incompatibles.
-- **Facade**: API simplificada sobre un subsistema complejo.
-- **Composite**: jerarquías parte‑todo con operaciones uniformes.
-- **Decorator**: agrega responsabilidades en tiempo de ejecución sin herencia.
-- **Proxy**: intermediario que controla el acceso (p. ej., lazy, remoto, cache).
-
-#### De Comportamiento
-
-- **Strategy**: intercambia algoritmos en tiempo de ejecución.
-- **Observer**: notificación de cambios (pub/sub) entre sujeto y observadores.
-- **Command**: encapsula una petición como objeto (deshacer, colas, logs).
-- **State**: cambia comportamiento según el estado interno.
-- **Template Method**: define el esqueleto de un algoritmo; subclases rellenan pasos.
-- **Iterator**: recorre colecciones sin exponer su representación interna.
-- **Mediator**: centraliza la comunicación para reducir acoplamientos entre colegas.
-
-> **Tip:** Prefiere composición sobre herencia; muchos patrones (Strategy, Decorator) lo promueven.
+Patrones que definen cómo los objetos interactúan y se comunican para lograr comportamientos dinámicos.
 
 ---
 
 ### Software Architecture
 
+La arquitectura de software define la estructura general de un sistema, sus componentes y las relaciones entre ellos. Es clave para garantizar escalabilidad, mantenibilidad y calidad en sistemas complejos.
+
 Cubre patrones como Clean Architecture, DDD, microservices, layers, decoupling, y otros fundamentos de diseño escalable.
+
+#### Event-Driven Architecture
+
+La arquitectura impulsada por eventos se basa en la producción, detección y reacción a eventos. Permite sistemas más flexibles y escalables, donde los componentes pueden comunicarse de manera asíncrona.
+
+#### Microservices
+
+Los microservicios son un estilo arquitectónico que divide aplicaciones en servicios pequeños e independientes, cada uno enfocado en una funcionalidad específica. Facilitan la escalabilidad, el despliegue independiente y la resiliencia.
+
+#### Monolithic Architecture
+
+La arquitectura monolítica agrupa todas las funcionalidades de una aplicación en un único bloque cohesivo. Aunque es más simple de desarrollar inicialmente, puede volverse difícil de mantener y escalar a medida que la aplicación crece.
 
 #### RAG Architecture
 
-**RAG (Retrieval-Augmented Generation)**: Arquitectura para sistemas de IA que combinan modelos generativos con recuperación de información relevante desde fuentes externas, mejorando la precisión y contexto de las respuestas.
+La Arquitectura RAG es un enfoque avanzado que combina modelos generativos con recuperación de información para mejorar la calidad y relevancia de las respuestas en sistemas de IA.
 
 #### Domain Driven Design (DDD)
+
+DDD es una metodología que centra el desarrollo de software en el dominio del negocio, utilizando modelos ricos y un lenguaje común para reflejar fielmente las reglas y procesos reales.
 
 Enfoque de diseño centrado en el dominio del negocio, usando modelos y un lenguaje ubicuo para alinear el software con las reglas y procesos reales.
 
@@ -109,7 +107,7 @@ Enfoque de diseño centrado en el dominio del negocio, usando modelos y un lengu
 
 ### Database Architecture
 
-Cobertura de modelos relational vs NoSQL, schema design, normalization, indexes, transactions, optimization, y scalability.
+La arquitectura de bases de datos abarca el diseño, organización y optimización de sistemas de almacenamiento de datos, esenciales para el rendimiento, integridad y escalabilidad de las aplicaciones.
 
 ---
 
