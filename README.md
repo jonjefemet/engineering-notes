@@ -7,6 +7,7 @@
 [![Topic: RAG Architecture](https://img.shields.io/badge/Topic-RAG%20Architecture-red?style=flat-square)](#software-architecture)
 [![Topic: Domain Driven Design](https://img.shields.io/badge/Topic-Domain%20Driven%20Design-brown?style=flat-square)](#domain-driven-design-ddd)
 [![Topic: Database Architecture](https://img.shields.io/badge/Topic-Database%20Architecture-orange?style=flat-square)](#database-architecture)
+[![Topic: Artificial Intelligence](https://img.shields.io/badge/Topic-Artificial%20Intelligence-black?style=flat-square)](#artificial-intelligence-ai)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 <p align="center">
   <img src="./assets/home.png" alt="Doble página del glosario con personaje estilo anime en el centro" width="720" />
@@ -21,22 +22,10 @@
 - [Engineering Notes — Main Topics](#engineering-notes--main-topics)
   - [Table of Contents](#table-of-contents)
     - [OOP](#oop)
-      - [Encapsulation](#encapsulation)
-      - [Inheritance](#inheritance)
-      - [Polymorphism](#polymorphism)
-      - [Abstraction](#abstraction)
-      - [SOLID Principles](#solid-principles)
     - [Design Patterns](#design-patterns)
-      - [Creational](#creational)
-      - [Structural](#structural)
-      - [Behavioral](#behavioral)
     - [Software Architecture](#software-architecture)
-      - [Event-Driven Architecture](#event-driven-architecture)
-      - [Microservices](#microservices)
-      - [Monolithic Architecture](#monolithic-architecture)
-      - [RAG Architecture](#rag-architecture)
-      - [Domain Driven Design (DDD)](#domain-driven-design-ddd)
     - [Database Architecture](#database-architecture)
+    - [Artificial Intelligence (AI)](#artificial-intelligence-ai)
   - [Conventions (useful as reference)](#conventions-useful-as-reference)
   - [Credits](#credits)
 
@@ -44,85 +33,72 @@
 
 ### OOP
 
-La Programación Orientada a Objetos (OOP) es un paradigma fundamental que permite modelar sistemas complejos mediante la organización de código en objetos que representan entidades del mundo real, facilitando la reutilización y mantenimiento.
-
-Estos son conceptos clave de OOP:
-
-#### Encapsulation
-
-**Encapsulation** — Consiste en ocultar detalles internos de implementación y exponer solo lo necesario a través de interfaces.
-
-#### Inheritance
-
-**Inheritance** — Permite reutilizar y extender características de una clase base en clases derivadas.
-
-#### Polymorphism
-
-**Polymorphism** — Capacidad de diferentes objetos para responder de manera distinta al mismo mensaje o método.
-
-#### Abstraction
-
-**Abstraction** — Enfocarse en los aspectos esenciales de una entidad, ignorando detalles irrelevantes.
-
-#### SOLID Principles
-
-**SOLID Principles** — Conjunto de buenas prácticas para lograr un diseño de software limpio, mantenible y extensible.
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+    La Programación Orientada a Objetos (OOP) es un paradigma fundamental que permite modelar sistemas complejos mediante la organización de código en objetos que representan entidades del mundo real, facilitando la reutilización y mantenimiento.
+  </div>
+  <div style="flex-shrink: 0;">
+    <img src="./assets/oop.gif" alt="Ilustración representando la Programación Orientada a Objetos" width="300"/>
+    <p style="font-size: 0.9em; color: gray; text-align: center;"><em>Digital Devil Story: Megami Tensei
+</em></p>
+  </div>
+</div>
 
 ---
 
 ### Design Patterns
 
-Los patrones de diseño son soluciones probadas y reutilizables a problemas comunes en el diseño de software. Ayudan a crear sistemas flexibles, escalables y mantenibles mediante estructuras y comportamientos bien definidos.
-
-Breve guía de patrones de diseño clásicos (GoF), organizada por propósito. Úsalos como lenguaje común y como catálogo de soluciones probadas.
-
-#### Creational
-
-Patrones que se enfocan en la creación flexible y controlada de objetos.
-
-#### Structural
-
-Patrones que organizan la composición de clases y objetos para formar estructuras más complejas.
-
-#### Behavioral
-
-Patrones que definen cómo los objetos interactúan y se comunican para lograr comportamientos dinámicos.
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex-shrink: 0;">
+    <img src="./assets/design-patterns.gif" alt="Diagrama de patrones de diseño" width="300"/>
+    <p style="font-size: 0.9em; color: gray; text-align: center;"><em>I Dream of Mimi, known as Buttobi!! CPU</em></p>
+  </div>
+  <div style="flex: 1;">
+    Los patrones de diseño son soluciones probadas y reutilizables a problemas comunes en el diseño de software. Ayudan a crear sistemas flexibles, escalables y mantenibles mediante estructuras y comportamientos bien definidos.
+  </div>
+</div>
 
 ---
 
 ### Software Architecture
 
-La arquitectura de software define la estructura general de un sistema, sus componentes y las relaciones entre ellos. Es clave para garantizar escalabilidad, mantenibilidad y calidad en sistemas complejos.
-
-Cubre patrones como Clean Architecture, DDD, microservices, layers, decoupling, y otros fundamentos de diseño escalable.
-
-#### Event-Driven Architecture
-
-La arquitectura impulsada por eventos se basa en la producción, detección y reacción a eventos. Permite sistemas más flexibles y escalables, donde los componentes pueden comunicarse de manera asíncrona.
-
-#### Microservices
-
-Los microservicios son un estilo arquitectónico que divide aplicaciones en servicios pequeños e independientes, cada uno enfocado en una funcionalidad específica. Facilitan la escalabilidad, el despliegue independiente y la resiliencia.
-
-#### Monolithic Architecture
-
-La arquitectura monolítica agrupa todas las funcionalidades de una aplicación en un único bloque cohesivo. Aunque es más simple de desarrollar inicialmente, puede volverse difícil de mantener y escalar a medida que la aplicación crece.
-
-#### RAG Architecture
-
-La Arquitectura RAG es un enfoque avanzado que combina modelos generativos con recuperación de información para mejorar la calidad y relevancia de las respuestas en sistemas de IA.
-
-#### Domain Driven Design (DDD)
-
-DDD es una metodología que centra el desarrollo de software en el dominio del negocio, utilizando modelos ricos y un lenguaje común para reflejar fielmente las reglas y procesos reales.
-
-Enfoque de diseño centrado en el dominio del negocio, usando modelos y un lenguaje ubicuo para alinear el software con las reglas y procesos reales.
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+    La arquitectura de software define la estructura general de un sistema, sus componentes y las relaciones entre ellos. Es clave para garantizar escalabilidad, mantenibilidad y calidad en sistemas complejos.
+  </div>
+  <div style="flex-shrink: 0;">
+    <img src="./assets/software-architecture.webp" alt="Diagrama de arquitectura de software" width="300"/>
+    <p style="font-size: 0.9em; color: gray; text-align: center;"><em>Neon Genesis Evangelion</em></p>
+  </div>
+</div>
 
 ---
 
 ### Database Architecture
 
-La arquitectura de bases de datos abarca el diseño, organización y optimización de sistemas de almacenamiento de datos, esenciales para el rendimiento, integridad y escalabilidad de las aplicaciones.
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex-shrink: 0;">
+    <img src="./assets/database-architecture.gif" alt="Diagrama de arquitectura de base de datos" width="300"/>
+    <p style="font-size: 0.9em; color: gray; text-align: center;"><em>Unknown Source</em></p>
+  </div>
+  <div style="flex: 1;">
+    La arquitectura de bases de datos abarca el diseño, organización y optimización de sistemas de almacenamiento de datos, esenciales para el rendimiento, integridad y escalabilidad de las aplicaciones.
+  </div>
+</div>
+
+---
+
+### Artificial Intelligence (AI)
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+    La inteligencia artificial abarca un conjunto de tecnologías que permiten a las máquinas simular capacidades humanas como el razonamiento, el aprendizaje y la percepción. Se utiliza para optimizar procesos, tomar decisiones basadas en datos y crear sistemas adaptativos en múltiples dominios.
+  </div>
+  <div style="flex-shrink: 0;">
+    <img src="./assets/ai.gif" alt="Ilustración de inteligencia artificial" width="300"/>
+    <p style="font-size: 0.9em; color: gray; text-align: center;"><em>Ghost in the Shell</em></p>
+  </div>
+</div>
 
 ---
 
